@@ -1,6 +1,7 @@
 .allBlog{
     
-    background-image: url("imagens/aerial-background-blog-cafe-camera-casual-1450843-pxhere.com.jpg");
+    /*background-image: url("imagens/brain-mind-psychology-idea-hearts-love-1370218-pxhere.com.jpg");*/
+    background-color: rgba(253, 246, 236, 100%);
     z-index: 5px;
 }
 #blogTitulo
@@ -8,13 +9,21 @@
     text-align: center;
     margin: auto;
     font-size: 120px;
+    font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
+    color:rgba(240,87,16,100%);
+}
+.postStandard
+{
+    
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 #botoes
 {
     margin-top: 15px;
-    background-color:green;
+    background-color:rgba(245, 239, 237,50%);
 }
 
 #sobreTitulo
@@ -24,5 +33,17 @@
     margin-right: 600px;
     margin-bottom: -5px;
     font-size: 50px;
+    color :rgba(61, 71, 96,100%);
     
+}
+
+#Titulo0, #Titulo1, #Titulo2, #Titulo3{
+    background-color: rgba(246, 242, 240, 30%);
+
+}
+
+#data0, #data1, #data2, #data3
+{   margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(246, 242, 240, 30%);
 }
