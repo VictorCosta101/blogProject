@@ -1,3 +1,8 @@
+.allBlog{
+    
+    background-image: url("imagens/aerial-background-blog-cafe-camera-casual-1450843-pxhere.com.jpg");
+    z-index: 5px;
+}
 #blogTitulo
 {
     text-align: center;
