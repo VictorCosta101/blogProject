@@ -1,7 +1,7 @@
 .allBlog{
     
-    /*background-image: url("imagens/brain-mind-psychology-idea-hearts-love-1370218-pxhere.com.jpg");*/
-    background-color: rgba(253, 246, 236, 100%);
+    background-image: url("imagens/play-hole-number-heart-pattern-line-893341-pxhere.com.jpg");
+    /*background-color: rgba(253, 246, 236, 100%);*/
     z-index: 5px;
 }
 #blogTitulo
@@ -10,53 +10,135 @@
     margin: auto;
     font-size: 120px;
     font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgba(240,87,16,100%);
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(8, 93, 173);
 }
-#postagemButton
+.postagemButton
+{   border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 125px;
+    height: 33px;
+    background-color: transparent;
+    background-image: url("imagens/buttons/button_postagens.jpg");
+    
+}
+.publicacoesButton
 {
-    background-image: src="imagens/buttons/postagensButton.jpg";
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 125px;
+    height: 33px;
+    background-color: transparent;
+    background-image: url("imagens/buttons/button_publicar.jpg"); 
 }
+.perfilButton
+{
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 125px;
+    height: 33px;
+    background-color: transparent;
+    background-image: url("imagens/buttons/button_perfil.jpg"); 
+}
+.enviarButton
+{
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 125px;
+    height: 33px;
+    background-color: transparent;
+    background-image: url("imagens/buttons/button_enviar.jpg"); 
+}
+.listaButton
+{
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 125px;
+    height: 33px;
+    background-color: transparent;
+    background-image: url("imagens/buttons/button_lista-excluir.jpg"); 
+}
+.excluirButton
+{
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 125px;
+    height: 33px;
+    background-color: transparent;
+    background-image: url("imagens/buttons/button_excluir.jpg"); 
+}
+
 .postStandard
 {
     right: 0px;
     background-color: rgba(241, 246, 247, 0.5);
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 #botoes
 {
     margin-top: 15px;
-    background-color:rgba(245, 239, 237,50%);
+    background-color: rgba(173, 182, 181,50%);
 }
 
-#sobreTitulo
+.sobreTitulo
 {
      /*float: left;*/
     margin-left:100px;
     margin-right: 600px;
     margin-bottom: -5px;
     font-size: 50px;
-    color :rgba(61, 71, 96,100%);
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(8, 93, 173);
     
 }
 
+.container
+{
+    margin-top: 50px;
+}
+
 #Titulo0, #Titulo1, #Titulo2, #Titulo3{
-    background-color: rgba(246, 242, 240, 30%);
+    color: rgb(8, 93, 173);
+    /*background-color: rgba(246, 242, 240, 30%);*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
 
 }
 
 #data0, #data1, #data2, #data3
 {   margin-left: 2%;
     margin-right: 10%;
-    background-color: rgba(246, 242, 240, 30%);
+    /*background-color: rgba(246, 242, 240, 30%)*/
+    font-size: 17px;
+    font-weight: bolder;
+    font-family: 'Ubuntu', sans-serif;
 }
 #post0, #post1, #post2, #post3
 {
     text-align: justify;
     text-justify: inter-word;
-}
+    margin-top: -5px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    }
 #imagemPerfil
 {
     float: left;
@@ -68,14 +150,18 @@
 
 #textoSobre
 {
+    background-color: rgba(255, 255, 255, 30%);
     margin-left: 20%;
     margin-top: 5%;
     font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
     
     right: 0px;
 }
 #listaHobbies
 {
+    background-color: rgba(255, 255, 255, 30%);
+    font-family: 'Ubuntu', sans-serif;
     margin-top: 5%;
     margin-left: 20%;
     text-justify: auto;
