@@ -13,9 +13,14 @@
     font-family: Arial, Helvetica, sans-serif;
     color:rgba(240,87,16,100%);
 }
+#postagemButton
+{
+    background-image: src="imagens/buttons/postagensButton.jpg";
+}
 .postStandard
 {
-    
+    right: 0px;
+    background-color: rgba(241, 246, 247, 0.5);
     margin-left: 30%;
     margin-right: 30%;
 }
@@ -43,7 +48,36 @@
 }
 
 #data0, #data1, #data2, #data3
-{   margin-left: 10%;
+{   margin-left: 2%;
     margin-right: 10%;
     background-color: rgba(246, 242, 240, 30%);
+}
+#post0, #post1, #post2, #post3
+{
+    text-align: justify;
+    text-justify: inter-word;
+}
+#imagemPerfil
+{
+    float: left;
+    width: 150px;
+
+    margin-left: 7%;
+    margin-top: 5%;
+}  
+
+#textoSobre
+{
+    margin-left: 20%;
+    margin-top: 5%;
+    font-size: 30px;
+    
+    right: 0px;
+}
+#listaHobbies
+{
+    margin-top: 5%;
+    margin-left: 20%;
+    text-justify: auto;
+    
 }
