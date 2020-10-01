@@ -51,9 +51,17 @@ function newPost()
 
 function load()
 {
-     postagens = JSON.parse(localStorage['postagens'])// recebe os valores armazenados no localStorage
+    try{
+        postagens = JSON.parse(localStorage['postagens'])
+    }
+    catch(erro)
+    {
+        postagens = [{titulo: "victor's hobbies",data:"Mon Sep 28 2020", post:"play chess"}];
+    }
+    
+    //  postagens = JSON.parse(localStorage['postagens'])// recebe os valores armazenados no localStorage
      var tam = postagens.length;
-     
+     console.log(tam);
      var a; 
 
      //imprime na pagina html as publicacoes 
@@ -94,9 +102,9 @@ function excluir(a)
 {
     postagens = JSON.parse(localStorage['postagens']) // recebe os valores armazenados no localStorage
     var tam = postagens.length;
-
+    if(a<=tam){
     postagens.splice((tam-a-1), 1); // retira o post da lista(vetor) postagens
-
+    }
     var JSONReadyUsers = JSON.stringify(postagens); // lista ==> string
     localStorage.setItem("postagens", JSONReadyUsers);// armazena a nova lista no localStorage
     location.reload();// atualiza a pagina
