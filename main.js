@@ -1,7 +1,8 @@
 // lista que armazena as publicações do blog 
+txtPadrao = "Sapiens <br> O Homen Que Calculava <br>A Informação  <br>A Arte da Guerra  <br> Cosmos <br> O mundo Assombrado Pelos Demônios<br> O Gene <br>O andar do Bêbado "
+let postagens = [{titulo: "Lista de livros Favoritos",data:"Mon Sep 28 2020", post: txtPadrao}];
 
-let postagens = [{titulo: "victor's hobbies",data:"Mon Sep 28 2020", post:"play chess"}];
-
+var gate = false;
 // objeto  para  verificacao de datas 
 
 var data = new Date();
@@ -31,7 +32,7 @@ function newPost()
     }
     catch(erro)
     {
-        postagens = [{titulo: "victor's hobbies",data:"Mon Sep 28 2020", post:"play chess"}];
+        postagens = [{titulo: "Lista de livros Favoritos",data:"Mon Sep 28 2020", post: txtPadrao}];
     }
     
        
@@ -56,7 +57,7 @@ function load()
     }
     catch(erro)
     {
-        postagens = [{titulo: "victor's hobbies",data:"Mon Sep 28 2020", post:"play chess"}];
+        postagens = [{titulo: "Lista de livros Favoritos",data:"Mon Sep 28 2020", post: txtPadrao}];
     }
     
     //  postagens = JSON.parse(localStorage['postagens'])// recebe os valores armazenados no localStorage
@@ -79,7 +80,18 @@ function load()
 
 function loadB()
 {
-    postagens = JSON.parse(localStorage['postagens'])
+    if(gate)
+    {
+        postagens=[];
+    }
+    else{
+    try{
+        postagens = JSON.parse(localStorage['postagens'])
+    }
+    catch(erro)
+    {
+        postagens = [{titulo: "Lista de livros Favoritos",data:"Mon Sep 28 2020", post: txtPadrao}];
+    }}
     var tam = postagens.length;
     console.log(tam);
     var a; 
@@ -100,8 +112,19 @@ function loadB()
 
 function excluir(a)
 {
-    postagens = JSON.parse(localStorage['postagens']) // recebe os valores armazenados no localStorage
+    try{
+        postagens = JSON.parse(localStorage['postagens'])
+    }
+    catch(erro)
+    {
+        postagens = [{titulo: "Lista de livros Favoritos",data:"Mon Sep 28 2020", post: txtPadrao}];
+    }
     var tam = postagens.length;
+    if(tam == 1 )
+    {
+        gate = true;
+        console.log(gate);
+    }
     if(a<=tam){
     postagens.splice((tam-a-1), 1); // retira o post da lista(vetor) postagens
     }
